@@ -10,7 +10,7 @@ int main(){
         printf("factorial works for only positive numbers");
     else{
         for(i = 1; i <= n; ++i){
-            factorial *= i;              // factorial = factorial*i;
+            factorial *= i;           
         }
         printf("Factorial of %d = %llu\n", n, factorial);
     }
