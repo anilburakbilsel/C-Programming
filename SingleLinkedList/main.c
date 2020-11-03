@@ -12,8 +12,7 @@ int main() {
 	LISTITEM *listhead, *temp;
 
 
-	// first indicate that the list has nothing in it 
-	// ... this is done by setting the list to point to nothing
+	// first indicate that the list has nothing in it by setting it to null
 	listhead = NULL;
 
 	// now populate the list
