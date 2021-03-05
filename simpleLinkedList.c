@@ -1,3 +1,4 @@
+// linked list is a dynamic data structure
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
