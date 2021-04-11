@@ -7,78 +7,88 @@
 #define MAX 1000
 
 using std::cout;
- 
-class Stack {
+
+class Stack
+{
     int top;
- 
+
 public:
-    int a[MAX]; // Maximum size of Stack
- 
-    Stack() { top = -1; }
-    bool push(int x);
-    int pop();
-    int peek();
-    bool isEmpty();
+    // Maximum size of Stack
+    int a[MAX];
+
+    // constructor
+    Stack()
+    {
+        top = -1;
+    }
+
+    bool push(int x)
+    {
+        if (top >= (MAX - 1))
+        {
+            cout << "we cannot push anymore: a stack overflow!!!";
+            return false;
+        }
+        else
+        {
+            a[++top] = x;
+            cout << x << " pushed into the stack\n";
+            return true;
+        }
+    }
+
+    int pop()
+    {
+        if (top < 0)
+        {
+            cout << "no more item to return in the stack: a stack underflow!!!";
+            return 0;
+        }
+        else
+        {
+            // returns the element in the  top
+            // also modifies the variable of the top by decrementing it by 1
+            int x = a[top--];
+            return x;
+        }
+    }
+
+    int peek()
+    {
+        if (top < 0)
+        {
+            cout << "stack is empty";
+            return 0;
+        }
+        else
+        {
+            int x = a[top];
+            return x;
+        }
+    }
+
+    bool isEmpty()
+    {
+        return (top < 0);
+    }
 };
- 
-bool Stack::push(int x)
-{
-    if (top >= (MAX - 1)) {
-        cout << "Stack Overflow";
-        return false;
-    }
-    else {
-        a[++top] = x;
-        cout << x << " pushed into stack\n";
-        return true;
-    }
-}
- 
-int Stack::pop()
-{
-    if (top < 0) {
-        cout << "Stack Underflow";
-        return 0;
-    }
-    else {
-        int x = a[top--];
-        return x;
-    }
-}
-int Stack::peek()
-{
-    if (top < 0) {
-        cout << "Stack is Empty";
-        return 0;
-    }
-    else {
-        int x = a[top];
-        return x;
-    }
-}
- 
-bool Stack::isEmpty()
-{
-    return (top < 0);
-}
- 
-// Driver program to test above functions
+
 int main()
 {
-    class Stack s;
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    cout << s.pop() << " Popped from stack\n";
+    Stack* s = new Stack();
+    s->push(10);
+    s->push(20);
+    s->push(30);
+    cout << s->pop() << " Popped from stack\n";
     //print all elements in stack :
-    cout<<"Elements present in stack : ";
-    while(!s.isEmpty())
+    cout << "Elements present in stack : ";
+    while (!s->isEmpty())
     {
         // print top element in stack
-        cout<<s.peek()<<" ";
+        cout << s->peek() << " ";
         // remove top element in stack
-        s.pop();
+        s->pop();
     }
- 
+    delete s;
     return 0;
 }
