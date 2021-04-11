@@ -1,11 +1,12 @@
 /* a C++ program which implements
-    a basic stack data structure */
+    a basic stack data structure 
+    */
 
+// macros and file inclusions
 #include <iostream>
-
-using namespace std;
- 
 #define MAX 1000
+
+using std::cout;
  
 class Stack {
     int top;
