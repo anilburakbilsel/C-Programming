@@ -1,8 +1,12 @@
 // linked list is a dynamic data structure
+// can be altered at runtime
+// all nodes are connected through pointers
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
 
+// a node is represented by a struct
+// the pointer contains the address of the next node
 struct test_struct
 {
     int val;
