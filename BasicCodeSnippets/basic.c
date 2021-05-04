@@ -19,6 +19,10 @@ void letsSwap(int *b, int *c) {
     printf("\nAfter swapping: myNum = %d, myOther = %d \n\n", *b, *c);
 }
 
+void swapWillNotWork(int a, int b){
+    
+}
+
 int main() {
 	myFunction();
     int myNum = 10;
