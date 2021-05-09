@@ -21,6 +21,10 @@ void letsSwap(int *b, int *c) {
 
 void swapWillNotWork(int a, int b){
     int a  = b;
+    // kagit havlu
+    // sut
+    // dis fircasi
+    // 
 }
 
 int main() {
