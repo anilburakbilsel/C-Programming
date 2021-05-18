@@ -9,7 +9,6 @@ void myFunction() {
     *theOther = 50;
     *myPointer = 10000;
     printf("myValue = %d\n", myValue);
-    // pinrt
 }
 
 void letsSwap(int *b, int *c) {
