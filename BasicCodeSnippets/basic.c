@@ -12,6 +12,7 @@ void myFunction() {
 }
 
 void letsSwap(int *b, int *c) {
+    //temp variable
     int temp;
     temp = *b;
     *b = *c;
