@@ -32,4 +32,6 @@ int main() {
     int myOther = 20;
     letsSwap(&myNum, &myOther);
 	return 0;
+
+    // indirection is using a pointer to access the data at the address to which the pointer refers
 }
