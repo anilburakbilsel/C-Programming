@@ -2,6 +2,8 @@
 
 void myFunction() {
     int myValue = 10;
+    // * is the dereferencing operator
+    // it is also know as indirection operator
     int *myPointer;
     myPointer = &myValue; 
     int *theOther;
