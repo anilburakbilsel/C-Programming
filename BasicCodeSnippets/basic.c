@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// dereferencing => it's the act of manipulating a value through its memory address 
+
 void myFunction() {
     int myValue = 10;
     // * is the dereferencing operator
@@ -34,4 +36,5 @@ int main() {
 	return 0;
 
     // indirection is using a pointer to access the data at the address to which the pointer refers
+    // indirection is also called dereferencing
 }
