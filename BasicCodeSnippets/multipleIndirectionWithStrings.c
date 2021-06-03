@@ -4,6 +4,8 @@
 
 // a string is a sequence of characters terminated by a null
 char* words[LENGTH];		// some strings
+// words is an array of pointers to characters
+// there are 3 pointers in words array
 
 int main(int argc, char **argv) {
 	char *pc;			// a pointer to a character
