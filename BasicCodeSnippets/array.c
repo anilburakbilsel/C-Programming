@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
     // the below line declares an array of 4 pointer-to-character values, and allocates space for 4 pointers
     char *charArr[4] = {"ankara","istanbul", "rize", "artvin"}; //this is an array of characters
     printf("%s %s %c\n", *charArr, charArr[0], *(charArr[1]));
-    // will print out: anil anil b
+    // will print out: ankara ankara i
 
 	return 0;
 

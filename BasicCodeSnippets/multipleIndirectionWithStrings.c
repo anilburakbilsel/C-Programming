@@ -6,6 +6,7 @@
 char* words[LENGTH];		// some strings
 // words is an array of pointers to characters
 // there are 3 pointers in words array
+// words is an array to hold a sequence of strings
 
 int main(int argc, char **argv) {
 	char *pc;			// a pointer to a character
