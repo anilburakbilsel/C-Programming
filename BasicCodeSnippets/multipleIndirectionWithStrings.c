@@ -1,10 +1,11 @@
 #include <stdio.h>
 
+// define is a preprocessor directive
 #define LENGTH 3
 
 // a string is a sequence of characters terminated by a null
 char* words[LENGTH];		// some strings
-// words is an array of pointers to characters
+// words is an array of pointers to characters (an array to pointer characters)
 // there are 3 pointers in words array
 // words is an array to hold a sequence of strings
 
@@ -29,8 +30,8 @@ int main(int argc, char **argv) {
 		ppc = words + i;
 		pc = *ppc;
 		printf(" i am here now %s\n", *ppc);
-        printf("lets print out the value of pc as well %s\n", pc);
-		while (*pc != 0) {					// process each character in a string
+        printf("lets print out the value of pc as well %s\n", pc); // that should be same as the *ppc
+		while (*pc != 0) {					// process each character in a string - don't forget that it ends with a null
 			printf("%c ", *pc);				// print out each character of the string individually
 			pc += 1;
 		}
