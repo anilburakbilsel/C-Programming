@@ -29,6 +29,7 @@ int main(int argc, char **argv) {
 		ppc = words + i;
 		pc = *ppc;
 		printf(" i am here now %s\n", *ppc);
+        printf("lets print out the value of pc as well %s\n", pc);
 		while (*pc != 0) {					// process each character in a string
 			printf("%c ", *pc);				// print out each character of the string individually
 			pc += 1;
