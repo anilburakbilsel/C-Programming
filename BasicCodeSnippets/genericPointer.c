@@ -1,8 +1,8 @@
 #include <stdio.h>
 #define LENGTH 3
 
-int data[LENGTH];    // some integers
-char *words[LENGTH]; // some strings
+int data[LENGTH];    // integer array
+char *words[LENGTH]; // array of strings
 
 // when a variable is declared as being a pointer to type void it is known as a generic pointer.
 // This is very useful when you want a pointer to point to data of different types at different times.
