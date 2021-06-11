@@ -24,6 +24,7 @@ int main()
     printf("the_data now points to the character %c\n", *(char *)the_data);
 
     void *gp; // a generic pointer
+    // when we want to dereference a generic pointer, we first need to cast it
 
     printf("generic pointer example\n");
 
