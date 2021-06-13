@@ -1,0 +1,1 @@
+You will find ome basic but fundemental information about Programming and C/C++ in this place. :)
