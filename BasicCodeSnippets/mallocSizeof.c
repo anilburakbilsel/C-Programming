@@ -4,7 +4,7 @@
 
 // very simple allocation of memory and changing something in the newly allocated memory
 int main() {
-	// the size of a char is 1 byte
+	// the size of a char is 1 byte (this also depends  on the compiler)
 	char* s;
 	int stringsize;
 	
