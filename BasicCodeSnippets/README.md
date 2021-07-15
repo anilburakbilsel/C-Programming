@@ -5,3 +5,6 @@ We can use calloc and malloc to create objects at runtime. malloc allocates memo
 The local variables declared inside a function are allocated memory in an area called the stack. When you exit from the function, the variables on the stack are cleared up. In stacks, the memory allocation happens on contiguous blocks of memory -> this is known as Stack Allocation. We call it a stack memory allocation because the allocation happens in the function call stack.
 
 The heap is where the global data is stored in the memory. 
+
+
+malloc: allocates size bytes of uninitilazied storage. we need to then cast it since it returns a generic pointer (hence we need to cast it to a specific type of pointer)
