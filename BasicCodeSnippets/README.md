@@ -6,4 +6,6 @@ The local variables declared inside a function are allocated memory in an area c
 
 The heap is where the global data is stored in the memory. It is also known as the dynamic memory. (The dynamic memory that we typically allocate through calls to malloc() in a C program gives us a contiguous chunk of memory from the "heap" part of the virtual address space of the process making the call.) Heap is the memory region that is grown dynamically (based on the runtime memory allocation requests) and shrunk dynamically (based on the runtime memory de-allocation requests).
 
+Similarly there is stack space which is also occupied and freed dynamically as function call frames are pushed/popped onto/from the call stack.
+
 malloc: allocates size bytes of uninitilazied storage. we need to then cast it since it returns a generic pointer (hence we need to cast it to a specific type of pointer)
